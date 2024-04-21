@@ -93,7 +93,8 @@ void print_ip(T value)
  * @brief print_ip - Шаблонная функция печати условного IP-адреса для `std::tuple`
  * @tparam T - `std::tuple`
  * @param value - условный IP-адрес
- */ate <class T, std::enable_if_t<details::is_tuple<T>::value, bool> = true>
+ */
+template <class T, std::enable_if_t<details::is_tuple<T>::value, bool> = true>
 void print_ip(T value)
 {
     std::apply([](auto &&... args){((std::cout<<args<< '.'), ...);}, value);
