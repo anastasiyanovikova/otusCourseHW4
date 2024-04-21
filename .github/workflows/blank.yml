@@ -38,22 +38,3 @@ jobs:
           asset_path: ./print_ip-0.0.${{ github.run_number }}-Linux.deb
           asset_name: print_ip-0.0.${{ github.run_number }}-Linux.deb
           asset_content_type: application/vnd.debian.binary-package
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          ref: main
-      - run: sudo apt install doxygen && doxygen --version
-      - run: sudo apt install graphviz
-      - run: doxygen
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: './html/'
-      - name: Deploy to github pages
-        id: deployment
-        uses: actions/deploy-pages@v4
