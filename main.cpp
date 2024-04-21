@@ -1,6 +1,12 @@
 #include <iostream>
 #include "printIplib.h"
 
+/**
+ * @brief main - main функция
+ *
+ * Вызов функции печати условного IP-адреса для разных параметров: число, строка, контейнер, кортеж
+ * @return
+ */
 int main(int, char const **)
 {
     print_ip(int8_t(-1));
