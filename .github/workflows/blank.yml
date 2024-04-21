@@ -16,7 +16,7 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install cmake -y
       - run: cmake . -DPATCH_VERSION=${{ github.run_number }}
       - run: cmake --build .
-      - run: cmake --build . --target test_alloc
+      - run: cmake --build . --target print_ip
       - run: cmake --build . --target package
       - name: Create Release
         id: create_release
@@ -53,7 +53,7 @@ jobs:
       - run: doxygen
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './html/'
       - name: Deploy to github pages
         id: deployment
         uses: actions/deploy-pages@v4
