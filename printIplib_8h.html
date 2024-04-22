@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Print IP: Файл printIplib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Print IP<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Template functions to print IP</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл printIplib.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для printIplib.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="printIplib_8h__incl.png" border="0" usemap="#aprintIplib_8h" alt=""/></div>
+<map name="aprintIplib_8h" id="aprintIplib_8h">
+<area shape="rect" title=" " alt="" coords="194,5,274,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,63,105"/>
+<area shape="poly" title=" " alt="" coords="201,34,78,78,76,73,199,29"/>
+<area shape="rect" title=" " alt="" coords="87,79,125,105"/>
+<area shape="poly" title=" " alt="" coords="214,34,140,75,138,70,211,29"/>
+<area shape="rect" title=" " alt="" coords="149,79,220,105"/>
+<area shape="poly" title=" " alt="" coords="228,33,204,68,199,65,224,30"/>
+<area shape="rect" title=" " alt="" coords="244,79,325,105"/>
+<area shape="poly" title=" " alt="" coords="245,30,270,65,265,68,240,33"/>
+<area shape="rect" title=" " alt="" coords="349,79,410,105"/>
+<area shape="poly" title=" " alt="" coords="260,29,342,69,340,74,257,34"/>
+<area shape="rect" title=" " alt="" coords="433,79,483,105"/>
+<area shape="poly" title=" " alt="" coords="273,29,419,75,417,80,272,34"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="printIplib_8h__dep__incl.png" border="0" usemap="#aprintIplib_8hdep" alt=""/></div>
+<map name="aprintIplib_8hdep" id="aprintIplib_8hdep">
+<area shape="rect" title=" " alt="" coords="55,5,136,31"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="5,79,79,105"/>
+<area shape="poly" title=" " alt="" coords="80,45,53,80,49,77,75,42"/>
+<area shape="rect" href="printIplib_8cpp.html" title=" " alt="" coords="103,79,197,105"/>
+<area shape="poly" title=" " alt="" coords="116,41,143,77,139,80,111,45"/>
+</map>
+</div>
+</div>
+<p><a href="printIplib_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__container.html">details::is_container&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__container_3_01std_1_1vector_3_01T_00_01Alloc_01_4_01_4.html">details::is_container&lt; std::vector&lt; T, Alloc &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__container_3_01std_1_1list_3_01T_00_01Alloc_01_4_01_4.html">details::is_container&lt; std::list&lt; T, Alloc &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__str.html">details::is_str&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__str_3_01std_1_1string_01_4.html">details::is_str&lt; std::string &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__str_3_01const_01std_1_1string_01_4.html">details::is_str&lt; const std::string &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__one__type.html">details::is_one_type&lt; Args &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__one__type_3_01T_00_01U_00_01Args_8_8_8_01_4.html">details::is_one_type&lt; T, U, Args... &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__one__type_3_01T_00_01T_00_01Args_8_8_8_01_4.html">details::is_one_type&lt; T, T, Args... &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__tuple.html">details::is_tuple&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__tuple_3_01std_1_1tuple_3_4_01_4.html">details::is_tuple&lt; std::tuple&lt;&gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetails_1_1is__tuple_3_01std_1_1tuple_3_01T_00_01Args_01_8_8_8_01_4_01_4.html">details::is_tuple&lt; std::tuple&lt; T, Args ... &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacedetails" id="r_namespacedetails"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetails.html">details</a></td></tr>
+<tr class="memdesc:namespacedetails"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структуры для определения типа параметра при вызове функции <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a14dc353cc0cd9f2442a94965c20a8cdf" id="r_a14dc353cc0cd9f2442a94965c20a8cdf"><td class="memTemplParams" colspan="2">template&lt;typename T , std::enable_if_t&lt; std::is_integral&lt; T &gt;::value, bool &gt;  = true&gt; </td></tr>
+<tr class="memitem:a14dc353cc0cd9f2442a94965c20a8cdf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a14dc353cc0cd9f2442a94965c20a8cdf">print_ip</a> (T value)</td></tr>
+<tr class="memdesc:a14dc353cc0cd9f2442a94965c20a8cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">print_ip - Шаблонная функция печати условного IP-адреса для произвольного целочисленного типа  <br /></td></tr>
+<tr class="separator:a14dc353cc0cd9f2442a94965c20a8cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a14dc353cc0cd9f2442a94965c20a8cdf" name="a14dc353cc0cd9f2442a94965c20a8cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14dc353cc0cd9f2442a94965c20a8cdf">&#9670;&#160;</a></span>print_ip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::enable_if_t&lt; std::is_integral&lt; T &gt;::value, bool &gt;  = true&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_ip </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>print_ip - Шаблонная функция печати условного IP-адреса для произвольного целочисленного типа </p>
+<p>print_ip - Шаблонная функция печати условного IP-адреса для <code>std::tuple</code></p>
+<p>print_ip - Шаблонная функция печати условного IP-адреса для контейнера</p>
+<p>print_ip - Шаблонная функция печати условного IP-адреса для строки</p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- целочисленный тип </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- условный IP-адрес</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- условный IP-адрес</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- контейнер <code>std::list</code>, <code>std::vector</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- условный IP-адрес</td></tr>
+    <tr><td class="paramname">T</td><td>- <code>std::tuple</code> </td></tr>
+    <tr><td class="paramname">value</td><td>- условный IP-адрес </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
